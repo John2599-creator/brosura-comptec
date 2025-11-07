@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comptec Solutions - Broșura Ultra Luxury</title>
+<style>
+/* Reset general */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family:'Helvetica Neue', Arial, sans-serif; background:#f7f7f7; color:#111; line-height:1.6; scroll-behavior:smooth;}
+
+/* Animatii scroll */
+.fade-in {opacity:0; transform:translateY(30px); animation:fadeIn 1s forwards; animation-delay:0.2s;}
+.fade-in:nth-child(2) {animation-delay:0.4s;}
+.fade-in:nth-child(3) {animation-delay:0.6s;}
+@keyframes fadeIn {to {opacity:1; transform:translateY(0);}}
+
+/* Container general */
+.container {max-width:1000px; margin:40px auto; background:#fff; border-radius:25px; overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,0.35); border-top:6px solid #FFD700;}
+
+/* Header lux */
+header {
+    position: relative;
+    background: linear-gradient(145deg, #FFD700, #f2e06d);
+    text-align:center;
+    padding:100px 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+header h1 {font-size:52px; font-weight:bold; letter-spacing:2px; text-transform:uppercase; margin-bottom:15px;}
+header p {font-size:22px;font-weight:500;}
+
+/* Section lux */
+section {padding:70px 50px; position:relative; background-attachment:fixed; background-size:cover;}
+section h2 {font-size:36px; margin-bottom:40px; text-transform:uppercase; letter-spacing:1px; display:inline-block; border-bottom:4px solid #FFD700; padding-bottom:5px;}
+
+/* Carduri premium */
+.card {background: linear-gradient(145deg, #FFF7B2, #FFF3A0); border-radius:25px; padding:40px 30px; margin-bottom:40px; box-shadow:0 25px 60px rgba(0,0,0,0.25); transition: transform 0.5s, box-shadow 0.5s; position:relative;}
+.card:hover {transform: translateY(-12px) scale(1.04); box-shadow:0 35px 90px rgba(0,0,0,0.4);}
+.cards-container {display:flex; flex-wrap:wrap; gap:35px;}
+.card-half {flex:1 1 48%;}
+
+/* Listă ✔ aurii */
+ul {padding-left:25px;}
+li {margin-bottom:12px; position: relative; padding-left:20px; font-size:18px; font-weight:500;}
+li::before {content:"✔"; color:#FFD700; position:absolute; left:0; font-weight:bold;}
+
+/* Buton CTA */
+.cta {text-align:center; padding:80px 20px; background:#111; border-top:6px solid #FFD700;}
+.cta button {
+    display:inline-block; padding:25px 80px; background:linear-gradient(135deg,#FFD700,#e6c200);
+    color:#111; font-size:24px; font-weight:bold; border-radius:60px; border:none; cursor:pointer;
+    box-shadow:0 25px 60px rgba(0,0,0,0.45); transition: transform 0.3s, box-shadow 0.3s;
+}
+.cta button:hover {transform:translateY(-8px) scale(1.05); box-shadow:0 35px 80px rgba(0,0,0,0.55);}
+
+/* Formular functional */
+#contact-form {display:none; margin-top:40px; background:#fff7b2; padding:40px; border-radius:25px; box-shadow:0 25px 60px rgba(0,0,0,0.35);}
+#contact-form label {display:block; margin-bottom:10px; font-weight:bold; font-size:18px;}
+#contact-form input, #contact-form textarea {
+    width:100%; padding:15px; margin-bottom:25px; border-radius:15px; border:1px solid #ccc; font-size:16px;
+}
+#contact-form button {padding:18px 50px; background:#111; color:#FFD700; font-weight:bold; border:none; border-radius:50px; cursor:pointer; font-size:18px;}
+#contact-form button:hover {background:#222;}
+
+/* Footer */
+footer {text-align:center; padding:40px; background:#111; color:#FFD700; font-size:16px; letter-spacing:0.5px;}
+
+/* Efect parallax subtil pe carduri */
+.card::before {content:""; position:absolute; top:0; left:0; right:0; bottom:0; border-radius:25px;
+background: linear-gradient(45deg, rgba(255,255,255,0.05), rgba(255,255,255,0)); pointer-events:none;}
+
+/* Responsive */
+@media(max-width:750px){.card-half {flex:1 1 100%;} header h1{font-size:42px;} header p{font-size:18px;} section h2{font-size:28px;} .cta button{font-size:20px;padding:20px 50px;}}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<h1>Comptec Solutions</h1>
+<p>Expertii tai in eficientizarea instalatiilor de aer si gaze tehnice</p>
+</header>
+
+<section>
+<h2>Despre noi</h2>
+<div class="card fade-in">
+<p>Comptec Solutions S.R.L. ofera solutii complete pentru instalatii de aer comprimat, azot, oxigen si gaze naturale. Peste 14 ani de experienta si peste 150 proiecte realizate la cheie pentru clienti industriali.</p>
+</div>
+</section>
+
+<section>
+<h2>Serviciile noastre</h2>
+<div class="cards-container">
+<div class="card card-half fade-in"><p>Audit complet al instalatiilor de aer comprimat si gaze tehnice</p></div>
+<div class="card card-half fade-in"><p>Consultanta si proiectare instalatii industriale</p></div>
+<div class="card card-half fade-in"><p>Instalare si punere in functiune 'la cheie'</p></div>
+<div class="card card-half fade-in"><p>Monitorizare si intretinere echipamente</p></div>
+</div>
+</section>
+
+<section>
+<h2>Solutii si echipamente</h2>
+<div class="cards-container">
+<div class="card card-half fade-in"><p>Compresoare: aer, azot, oxigen, GNC/CNG</p></div>
+<div class="card card-half fade-in"><p>Statii industriale de compresoare si ventilatii</p></div>
+<div class="card card-half fade-in"><p>Retele aer comprimat si vacuum</p></div>
+<div class="card card-half fade-in"><p>Instalatii personalizate 'la cheie' pentru industrie</p></div>
+</div>
+</section>
+
+<section>
+<h2>Avantaje pentru clienti</h2>
+<div class="card fade-in">
+<ul>
+<li>Eficienta sporita a instalatiilor</li>
+<li>Reducerea costurilor operationale</li>
+<li>Solutii personalizate pentru fiecare client</li>
+<li>Cresterea duratei de viata a echipamentelor</li>
+<li>Expertiza si suport continuu</li>
+</ul>
+</div>
+</section>
+
+<section class="cta">
+<button onclick="document.getElementById('contact-form').style.display='block'; this.style.display='none';">Contacteaza-ne</button>
+
+<form id="contact-form" action="https://formsubmit.co/andrei.savu@comptec.solutions" method="POST">
+<label for="nume">Nume:</label>
+<input type="text" name="nume" placeholder="Introdu numele tau" required>
+
+<label for="email">Email:</label>
+<input type="email" name="email" placeholder="Introdu adresa ta de email" required>
+
+<label for="mesaj">Mesaj:</label>
+<textarea name="mesaj" rows="5" placeholder="Scrie mesajul tau" required></textarea>
+
+<button type="submit">Trimite mesaj</button>
+</form>
+</section>
+
+<footer>
+<p>Str. Romanitei nr. 15, 105600 Campina, Prahova, Romania | Tel: +40 730 223 558 | www.comptec.ro</p>
+</footer>
+
+</div>
+
+</body>
+</html>
